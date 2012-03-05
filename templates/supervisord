@@ -1,0 +1,70 @@
+#!/bin/bash
+# supervisord        Startup script for supervisord
+#
+# chkconfig: 2345 85 15
+# description: supervisord runs and watches your processes
+
+# source function library
+. /etc/init.d/functions
+
+RETVAL=0
+prog="${buildout:directory}/bin/supervisord"
+
+USER="tochange"
+
+start() {
+        echo -n $"Starting $prog: "
+        if [ $UID -ne 0 ]; then
+                RETVAL=1
+                failure
+        else
+                daemon --user=$USER $prog
+                RETVAL=$?
+                [ $RETVAL -eq 0 ] && touch /var/lock/supervisord
+        fi;
+        echo 
+        return $RETVAL
+}
+
+stop() {
+        echo -n $"Stopping $prog: "
+        if [ $UID -ne 0 ]; then
+                RETVAL=1
+                failure
+        else
+                ${buildout:directory}/bin/supervisorctl stop all
+                killproc $prog
+                RETVAL=$?
+                [ $RETVAL -eq 0 ] && rm -f /var/lock/supervisord
+        fi;
+        echo
+        return $RETVAL
+}
+
+restart(){
+    stop
+    start
+}
+
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+        ;;
+  status)
+        status supervisord
+    ${buildout:directory}/bin/supervisorctl status
+    RETVAL=$?
+        ;;
+  *)
+    echo $"Usage: $0 {start|stop|status|restart}"
+    RETVAL=1
+esac
+
+exit $RETVAL

@@ -1,0 +1,57 @@
+Changelog
+=========
+
+2.0.4 (unreleased)
+------------------
+
+- add oracle in hosts. 
+
+
+2.0.3 (2012-02-20)
+------------------
+
+- add dev.cfg which does not install varnish but install zest.releaser.
+
+
+2.0.2 (2012-02-16)
+------------------
+
+- add lxml needed for diazo theme.
+
+
+2.0.1 (2012-02-15)
+------------------
+
+- add python-ldap to hosts.
+
+
+1.4 (2012-02-07)
+----------------
+
+- Nothing changed yet.
+
+
+1.3 (2012-02-06)
+----------------
+
+- Cleanup.
+
+
+1.2 (2012-01-27)
+----------------
+
+- Nothing changed yet.
+
+
+1.1 (2012-01-24)
+----------------
+
+- Add Pillow and LinguaPlone in base.cfg.
+- Automatic directory buildout
+- Modify sys.cfg
+- del database.cfg, must be in projects config
+- del versions/sources.cfg, must be in projects config
+
+1.0 (2012-01-06)
+----------------
+- initial release
