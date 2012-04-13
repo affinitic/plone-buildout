@@ -9,6 +9,7 @@ Changelog
 - mr.developer is no more on base.cfg.
 - Update to Plone 4.1.4
 - mr.developer 1.20
+- Update linguaplone et pillow
 
 
 2.0.3 (2012-02-20)
