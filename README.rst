@@ -10,14 +10,16 @@ Our buildouts are supposed to be built in the following way:
 
 * create and edit ``dev.cfg`` and 'project.cfg'with at least ::
 
-dev.cfg:
+dev.cfg::
+
   1 [buildout]                                                                  
   2                                                                             
   3 extends =
   4     project.cfg
   5     https://raw.github.com/CIRB/plone-buildout/master/dev.cfg?login=jenkins-cirb&token=4d0a9ab50e431868b36636193ae08c69                                               
 
-project.cfg:
+project.cfg::
+
   1 [projects]                                                                  
   2 zcml =                                                                      
   3 eggs =
