@@ -8,7 +8,7 @@ Our buildouts are supposed to be built in the following way:
     http://svn.zope.org/*checkout*/zc.buildout/tags/1.4.4/bootstrap/bootstrap.py
 
 
-* create and edit ``dev.cfg`` and 'project.cfg'with at least ::
+* create and edit ``dev.cfg`` and ``project.cfg`` with at least ::
 
 dev.cfg::
 
