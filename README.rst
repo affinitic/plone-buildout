@@ -29,10 +29,10 @@ project.cfg::
 * you should configure ``zcml`` and ``eggs`` values with the values appropriate for your project
 
 * your buildout can extend four different files
-      ° ``instance.cfg`` provides 1 standalone Zope server and 1 Varnish server
-      ° ``client.cfg`` provides two ZEO client Zope servers and 1 Varnish server
-      ° ``server.cfg`` provides 1 ZEO server
-      ° ``both.cfg`` is the combination of ``client.cfg`` and ``server.cfg``
+      - ``instance.cfg`` provides 1 standalone Zope server and 1 Varnish server
+      - ``client.cfg`` provides two ZEO client Zope servers and 1 Varnish server
+      - ``server.cfg`` provides 1 ZEO server
+      - ``both.cfg`` is the combination of ``client.cfg`` and ``server.cfg``
 
 * if you need to mount databases, you should create and edit
       ``database.cfg`` and specify it in the ``extends`` section
@@ -44,6 +44,10 @@ project.cfg::
 
 Testing
 =======
+Plone egg
+---------
+*For this exemple, I use a fake collective.product egg.*
+ 
 In your ``buildout.cfg`` product, add [test] section ::
 
     parts =
@@ -63,15 +67,6 @@ In ``setup.py`` add extra_require section ::
         [
           'plone.app.testing',
         ], },
-
-You need to add a ``jenkins.cfg`` for buildout like this ::
-
-    [buildout]
-    extends = 
-        buildout.cfg
-        https://raw.github.com/CIRB/jenkins-buildout/master/jenkins-base.cfg
-    
-    package-directories = ${buildout:directory}/collective/checktranslated
 
 The plone products must have Unittest. For this add a ``testing.py`` on root products ::
 
@@ -104,6 +99,16 @@ Create tests folder, and add (for exemple) ``test_product.py`` file ::
         def test_product(self):
             self.assertTrue(True)
 
+Jenkins
+-------
+You need to add a ``jenkins.cfg`` for buildout like this ::
 
+    [buildout]
+    extends = 
+        buildout.cfg
+        https://raw.github.com/CIRB/jenkins-buildout/master/jenkins-base.cfg
+    
+    package-directories = ${buildout:directory}/collective/product
 
+Finaly, you can add a jenkins job in `jenkins.cirb.lan <http://jenkins.cirb.lan>`_.
 
