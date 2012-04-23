@@ -74,13 +74,13 @@ The plone products must have Unittest. For this add a ``testing.py`` on root pro
     from plone.app.testing import PloneWithPackageLayer
     from plone.app.testing import IntegrationTesting, FunctionalTesting
     
-    import collective.products
+    import collective.product
     
     FIXTURE = PloneWithPackageLayer(
         zcml_filename="configure.zcml",
-        zcml_package=collective.products,
+        zcml_package=collective.product,
         additional_z2_products=(),
-        gs_profile_id='collective.products:default',
+        gs_profile_id='collective.product:default',
         name="FIXTURE")
     
     INTEGRATION = IntegrationTesting(
