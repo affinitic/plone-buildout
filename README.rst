@@ -70,7 +70,7 @@ In ``setup.py`` add extra_require section ::
 
 The plone products must have Unittest. For this add a ``testing.py`` on root products ::
 
-    # -*- coding: UTF-8 -*-
+    # -*- coding: utf-8 -*-
     from plone.app.testing import PloneWithPackageLayer
     from plone.app.testing import IntegrationTesting, FunctionalTesting
     
@@ -92,7 +92,7 @@ The plone products must have Unittest. For this add a ``testing.py`` on root pro
 
 Create tests folder, and add (for exemple) ``test_product.py`` file ::
 
-    # -*- coding: UTF-8 -*-
+    # -*- coding: utf-8 -*-
     import unittest2 as unittest
     
     class TestProduct(unittest.TestCase):    
