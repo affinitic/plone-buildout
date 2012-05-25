@@ -10,7 +10,7 @@ Changelog
 2.1.1 (2012-05-25)
 ------------------
 
-- Nothing changed yet.
+- zeopack is define for 7 days.
 
 
 2.1 (2012-04-26)
@@ -22,7 +22,6 @@ Changelog
 - Update to Plone 4.1.4
 - mr.developer 1.21
 - Update linguaplone et pillow.
-- zeopack is define for 7 days.
 
 
 2.0.3 (2012-02-20)
