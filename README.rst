@@ -128,6 +128,7 @@ You need to add a ``jenkins.cfg`` for buildout like this ::
 
 Finaly, you can add a jenkins job in `jenkins.cirb.lan <http://jenkins.cirb.lan>`_.
 
+
 RPM
----
-To complete
+===
+Doc in progress
