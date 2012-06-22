@@ -1,6 +1,22 @@
 CIRB buildout Plone 4
 =====================
 
+Introduction
+------------
+
+* backup.cfg : Contient les paramètres pour la gestion des backup (pour une installation sans multistorage, il y a rien à faire, par contre lorsque vous êtes en multistorage il faut modifier la ligne 9. Il faut remplacer "zeopack -S 1" par le script de backup "packall" que vous devez modifier en fonction de vos storages)
+* base.cfg : fichier définissant tous les extends, mais aussi les checkout nécessaires pour votre projet.
+* hosts.cfg : liste des sites permis pour le téléchargement.
+* zeo-clients.cfg : configuration des zeo clients.
+* zeo-server.cfg : configuration du zeo server.
+* both.cfg : dans le cas d'une installation zeocluster all in one, c'est sur ce fichier que vous devez créer votre lien symbolique depuis la racine de votre plone (commande ln -s)
+* client.cfg : dans le cas d'une installation zeocluster sur plusieurs serveurs, c'est sur ce fichier que vous devez créer votre lien symbolique depuis la racine de votre plone client (commande ln -s). 
+* server.cfg :dans le cas d'une installation zeocluster sur plusieurs serveurs, c'est sur ce fichier que vous devez créer votre lien symbolique depuis la racine de votre plone master (commande ln -s). 
+* versions.cfg : Ce fichier contient la définition de tous les modules utilisés par Plone et Zope, ainsi que les add'on choisies par le CIRB et ceux de vos projets.
+
+Make a new project
+------------------
+
 Our buildouts are supposed to be built in the following way:
 
 * fetch ``bootstrap.py`` from ::
