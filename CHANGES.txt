@@ -7,6 +7,7 @@ Changelog
 - Clean versions.cfg, delete unused versions, and update other.
 - Update Plone (4.2).
 - Add default hosts and ports.
+- Add simple spec file for rpm building.
 
 
 2.1.2 (2012-07-13)
