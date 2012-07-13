@@ -5,7 +5,8 @@ Changelog
 ------------------
 
 - Clean versions.cfg, delete unused versions, and update other.
-- Update Plone (4.2)i.
+- Update Plone (4.2).
+- Add default hosts and ports.
 
 
 2.1.2 (2012-07-13)
