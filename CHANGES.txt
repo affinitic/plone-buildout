@@ -4,7 +4,8 @@ Changelog
 2.2.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Clean versions.cfg, delete unused versions, and update other.
+- Update Plone (4.2)i.
 
 
 2.1.2 (2012-07-13)
