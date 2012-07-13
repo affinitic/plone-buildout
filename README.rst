@@ -131,4 +131,6 @@ Finaly, you can add a jenkins job in `jenkins.cirb.lan <http://jenkins.cirb.lan>
 
 RPM
 ===
-Doc in progress
+You must construct rpms with a Jenkins job. See Build-rpm-research job on http://jenkins.cirb.lan.
+
+See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
