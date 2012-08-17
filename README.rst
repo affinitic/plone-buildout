@@ -65,6 +65,26 @@ RPM
 ===
 See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
 
+* rpm.cfg file looks like (replace master by the last tag of CIRB/plone-buildout) ::
+
+    [buildout]
+    extends =
+        project.cfg
+        https://raw.github.com/CIRB/plone-buildout/master/both.cfg?login=jenkins-cirb&token=4d0a9ab50e431868b36636193ae08c69
+    
+    [hosts]
+    client1 = 127.0.0.1
+    client2 = 127.0.0.1
+    zeo = 127.0.0.1
+    
+    [ports]
+    instance = 8080
+    client1 = 8080
+    client2 = 8081
+    zeo = 8100
+    
+    [versions]
+    zc.buildout = 1.4.4
 
 Puppet
 ======
