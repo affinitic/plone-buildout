@@ -17,6 +17,8 @@ Introduction
 Make a new project
 ------------------
 
+First, create a buildout for your project. (Adding a buildout repo into github and, ideally, a policy)
+
 Our buildouts are supposed to be built in the following way:
 
 * fetch ``bootstrap.py`` from ::
@@ -45,8 +47,8 @@ project.cfg::
 * you should configure ``zcml`` and ``eggs`` values with the values appropriate for your project
 
 * your buildout can extend four different files
-      - ``instance.cfg`` provides 1 standalone Zope server and 1 Varnish server
-      - ``client.cfg`` provides two ZEO client Zope servers and 1 Varnish server
+      - ``instance.cfg`` provides 1 standalone Zope server/client
+      - ``client.cfg`` provides two ZEO client Zope servers
       - ``server.cfg`` provides 1 ZEO server
       - ``both.cfg`` is the combination of ``client.cfg`` and ``server.cfg``
 
@@ -56,6 +58,10 @@ project.cfg::
 * make ``buildout.cfg`` symbolic link ::
 
     ln -s dev.cfg buildout.cfg
+
+RPM
+===
+See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
 
 
 Testing
@@ -127,10 +133,3 @@ You need to add a ``jenkins.cfg`` for buildout like this ::
     package-directories = ${buildout:directory}/collective/product
 
 Finaly, you can add a jenkins job in `jenkins.cirb.lan <http://jenkins.cirb.lan>`_.
-
-
-RPM
-===
-You must construct rpms with a Jenkins job. See Build-rpm-research job on http://jenkins.cirb.lan.
-
-See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
