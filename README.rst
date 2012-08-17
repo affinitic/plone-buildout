@@ -1,5 +1,6 @@
 CIRB buildout Plone 4
 =====================
+.. contents::
 
 Introduction
 ------------
