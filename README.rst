@@ -26,7 +26,7 @@ Our buildouts are supposed to be built in the following way:
     http://svn.zope.org/*checkout*/zc.buildout/tags/1.4.4/bootstrap/bootstrap.py
 
 
-* create and edit ``dev.cfg`` and ``project.cfg`` with at least ::
+* create and edit ``dev.cfg`` and ``project.cfg`` with at least (exemple https://github.com/CIRB/buildout-research) ::
 
 dev.cfg::
 
@@ -59,10 +59,25 @@ project.cfg::
 
     ln -s dev.cfg buildout.cfg
 
+
 RPM
 ===
 See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
 
+
+Puppet
+======
+
+* First, be familiar with the doc : http://jenkins.cirb.lan/doc/
+
+* Create a role for your server
+[...]
+
+* Full in hiera file
+[...]
+
+* Create the node file (into manifest/$env)
+The node have to be named as the hostname of the server.
 
 Testing
 =======
