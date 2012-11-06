@@ -4,7 +4,7 @@ Changelog
 2.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move jenkins-base into another repo.
 
 
 2.2.0 (2012-09-24)
