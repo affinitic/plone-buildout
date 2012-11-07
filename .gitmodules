@@ -1,3 +1,0 @@
-[submodule "rpm-templates"]
-	path = rpm-templates
-	url = git@github.com:CIRB/Rpmizer.git
