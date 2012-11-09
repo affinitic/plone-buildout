@@ -24,7 +24,8 @@ Create a policy, and after Simply launch ::
     $ templer plone4_cirb_buildout id_project
 
 
-old style --
+old style
+---------
 First, create a buildout for your project. (Adding a buildout repo into github and, ideally, a policy)
 
 Our buildouts are supposed to be built in the following way:
