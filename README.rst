@@ -102,7 +102,7 @@ The node have to be named as the hostname of the server.
 
 * Add facter into server
 Create this file : /etc/facter/facts.d/host-info.txt 
-with this info = "hostgroup=plone"
+with this info = "hostgroup=plone"::
     
     $ sudo mkdir -p /etc/facter/facts.d
     $ sudo echo "hostgroup=plone" > /etc/facter/facts.d/host-info.txt
