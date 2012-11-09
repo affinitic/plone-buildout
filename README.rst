@@ -1,9 +1,11 @@
 CIRB buildout Plone 4
-=====================
-.. contents::
+
+.. sectnum::
+
+.. contents:: The tiny table of contents
 
 Introduction
-------------
+~~~~~~~~~~~~
 
 * backup.cfg : Contient les paramètres pour la gestion des backup (pour une installation sans multistorage, il y a rien à faire, par contre lorsque vous êtes en multistorage il faut modifier la ligne 9. Il faut remplacer "zeopack -S 1" par le script de backup "packall" que vous devez modifier en fonction de vos storages)
 * base.cfg : fichier définissant tous les extends, mais aussi les checkout nécessaires pour votre projet.
@@ -16,13 +18,13 @@ Introduction
 * versions.cfg : Ce fichier contient la définition de tous les modules utilisés par Plone et Zope, ainsi que les add'on choisies par le CIRB et ceux de vos projets.
 
 Make a new project
-------------------
+~~~~~~~~~~~~~~~~~~
 Create a policy, and after Simply launch ::
 
     $ templer plone4_cirb_buildout id_project
 
 
-- old style - 
+old style --
 First, create a buildout for your project. (Adding a buildout repo into github and, ideally, a policy)
 
 Our buildouts are supposed to be built in the following way:
@@ -67,7 +69,7 @@ project.cfg::
 
 
 RPM
-===
+~~~
 See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
 
 * rpm.cfg file looks like (replace master by the last tag of CIRB/plone-buildout) ::
@@ -92,7 +94,7 @@ See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmize
     zc.buildout = 1.4.4
 
 Puppet
-======
+~~~~~
 
 * First, be familiar with the doc : http://jenkins.cirb.lan/doc/
 
@@ -115,7 +117,7 @@ with this info = "hostgroup=plone"::
     # exit
 
 Testing
-=======
+~~~~~~~
 Plone egg
 ---------
 *For this exemple, I use a fake collective.product egg.*
@@ -172,7 +174,7 @@ Create tests folder, and add (for exemple) ``test_product.py`` file ::
             self.assertTrue(True)
 
 Jenkins
--------
+~~~~~~~
 You need to add a ``jenkins.cfg`` for buildout like this ::
 
     [buildout]
