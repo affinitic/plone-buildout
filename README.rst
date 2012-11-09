@@ -107,6 +107,7 @@ with this info = "hostgroup=plone"::
     $ sudo -s
     # mkdir -p /etc/facter/facts.d
     # echo "hostgroup=plone" > /etc/facter/facts.d/host-info.txt
+    # exit
 
 Testing
 =======
