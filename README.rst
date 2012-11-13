@@ -24,8 +24,8 @@ Create a policy, and after Simply launch ::
     $ templer plone4_cirb_buildout id_project
 
 
-old style
----------
+old style: create buildout
+--------------------------
 First, create a buildout for your project. (Adding a buildout repo into github and, ideally, a policy)
 
 Our buildouts are supposed to be built in the following way:
@@ -68,9 +68,9 @@ project.cfg::
 
     ln -s dev.cfg buildout.cfg
 
+old style: RPM
+--------------
 
-RPM
-~~~
 See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmizer
 
 * rpm.cfg file looks like (replace master by the last tag of CIRB/plone-buildout) ::
@@ -96,17 +96,48 @@ See doc to create rpm build and spec files here : https://github.com/CIRB/Rpmize
 
 Puppet
 ~~~~~
+For exemple, $env = staging, $hostname = svhwecavl073.
 
 * First, be familiar with the doc : http://jenkins.cirb.lan/doc/
 
-* Create a role for your server
-[...]
+* Full the common hiera file (into puppet repo, got to hieradata/$env/plone/common.yaml::
+    
+    cirb:
+        group:
+            gid: 4xx
+        user:
+            name: cirb
+            uid: 6xx
+            home: /data/cirb
+            group: cirb
+        rpmversion: latest
+        zeoserver:
+            port: 8100
+        clients:
+            - client1
+        client1:
+            port: 8080
+        urls:
+            - www.cirb.irisnetlab.be
+            - www.cibg.irisnetlab.be
+        env_values:
+            - DEPLOY_ENV staging
 
-* Full in hiera file
-[...]
+* Create a yaml file (into hieradata/$env/plone/$hostname.yaml)::
 
-* Create the node file (into manifest/$env)
-The node have to be named as the hostname of the server.
+    plone_project_ids:
+        - cirb
+
+* Create the node file (into manifest/nodes-$env/plone/$hostname.pp)
+The node have to be named as the hostname of the server::
+
+    node '$hostname.sta.srv.cirb.lan' {
+      class {'puppet::client':
+        environment => 'staging',
+      }
+    
+      include role::plone::sites
+    }
 
 * Add facter into server
 Create this file : /etc/facter/facts.d/host-info.txt 
