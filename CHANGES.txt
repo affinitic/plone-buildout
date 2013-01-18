@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - Update quickupload version
+- Update LinguaPlone version (4.1.3)
 
 
 2.3.0 (2012-12-21)
