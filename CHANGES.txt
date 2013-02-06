@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - collective.ckeditor version is now 3.6.8.
+- Update Plone version to 4.2.4.
 
 
 2.3.1 (2013-01-30)
