@@ -4,7 +4,7 @@ Changelog
 2.3.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update to zc.buildout 2.0.0.
 
 
 2.3.2 (2013-02-06)
