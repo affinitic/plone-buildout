@@ -158,7 +158,7 @@ Finaly, you can add a jenkins job in `jenkins.cirb.lan <http://jenkins.cirb.lan>
 Statistic
 ~~~~~~~~~
 To add some stat on Plone site, 
-you have to add the 'cirb.zopemonitoring' package on (for exemple) policy package,
+you have to add the 'cirb.zopemonitoring' package on (for exemple) policy package, into setup.py file.
 and include this package in the main configure.zcml::
 
     <include package="cirb.zopemonitoring" />
