@@ -91,7 +91,7 @@ Runing Puppet on a Plone server (REQUIRE: be a SUDO user) and know your environm
 
 * First time launch this   ::
 
-    sudo puppet agent --test --environment staging --server puppet.prd.srv.cirb.lan
+    sudo puppet agent --test --environment staging --server puppet.prd.srv.cirb.lan --pluginsync
 
 * If you are not in the first run ::
 
