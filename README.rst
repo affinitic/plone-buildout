@@ -84,11 +84,16 @@ with this info = "hostgroup=plone"::
     # echo "hostgroup=plone" > /etc/facter/facts.d/host-info.txt
     # exit
 
-* For runing puppet on a Plone server, first time launch this (REQUIRE: be SUDO user)  ::
+Run Puppet
+----------
+Runing Puppet on a Plone server (REQUIRE: be a SUDO user) and know your environment (here, for the example, environment = staging)
+
+
+* First time launch this   ::
 
     sudo puppet agent --test --environment staging --server puppet.prd.srv.cirb.lan
 
-If you are not in the first run ::
+* If you are not in the first run ::
 
     sudo /usr/local/bin/run_puppet.sh
 
