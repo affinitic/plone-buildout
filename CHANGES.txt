@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - Update zest.releaser version.
+- Clean token.
 
 
 2.3.3 (2013-02-11)
