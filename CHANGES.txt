@@ -5,7 +5,8 @@ Changelog
 ------------------
 
 - Update to Plone 4.2.5.
-
+- Update to Pillow 2.0.0
+- Update to PloneFormGen 1.7i.7
 
 2.4.0 (2013-04-02)
 ------------------
