@@ -9,6 +9,7 @@ Changelog
 - Add monitoring versions.
 - Update collective.recipe.backup to 2.10.
 - Change backup location, now each projects section needs an "id".
+- Add bloblocation for backup.
 
 
 2.4.1 (2013-04-12)
