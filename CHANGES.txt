@@ -7,6 +7,7 @@ Changelog
 - Update to Plone 4.3.
 - Update for collective.recaptcha for Plone 4.3 compatibility.
 - Add monitoring versions.
+- Update collective.recipe.backup to 2.10.
 
 
 2.4.1 (2013-04-12)
