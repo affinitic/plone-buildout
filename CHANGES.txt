@@ -8,6 +8,7 @@ Changelog
 - Update for collective.recaptcha for Plone 4.3 compatibility.
 - Add monitoring versions.
 - Update collective.recipe.backup to 2.10.
+- Change backup location, now each projects section needs an "id".
 
 
 2.4.1 (2013-04-12)
