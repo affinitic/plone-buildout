@@ -7,7 +7,7 @@ Changelog
 - Delete buildout.dumppickedversions2 from dev.cfg
 - Update for collective.recaptcha for Plone 4.3 compatibility.
 - Add monitoring versions.
-- Update collective.recipe.backup to 2.10.
+- Update collective.recipe.backup to 2.11.
 - Change backup location, now each projects section needs an "id".
 - Add bloblocation for backup.
 
