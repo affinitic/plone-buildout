@@ -6,6 +6,7 @@ Changelog
 
 - Add version of collective.recipe.rsync.
 - Add *crate.io* in allow-hosts.
+- Add check-manifest as dev tools.
 
 
 2.4.2 (2013-05-14)
