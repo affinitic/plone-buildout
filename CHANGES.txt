@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.4.4 (unreleased)
+2.4.4 (2013-05-31)
 ------------------
 
 - Add argparse = 1.2.1, needed by check-manifest. 
