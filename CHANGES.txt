@@ -4,7 +4,8 @@ Changelog
 2.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add argparse = 1.2.1, needed by check-manifest. 
+  This package is in python base from python 2.7+.
 
 
 2.4.3 (2013-05-31)
