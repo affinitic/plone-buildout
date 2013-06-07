@@ -4,7 +4,7 @@ Changelog
 2.4.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add dowload and install sections.
 
 
 2.4.5 (2013-05-31)
