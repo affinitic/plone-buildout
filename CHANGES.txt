@@ -4,7 +4,7 @@ Changelog
 2.5.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update collective.recipe.backup to 2.12.
 
 
 2.5.3 (2013-07-08)
