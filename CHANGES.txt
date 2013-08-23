@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.5.4 (unreleased)
+2.6.0 (2013-08-23)
 ------------------
 
 - Update collective.recipe.backup to 2.12.
