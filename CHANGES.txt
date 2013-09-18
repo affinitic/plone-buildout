@@ -4,7 +4,7 @@ Changelog
 2.6.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update index to http://pypi.irisnet.be/simple/.
 
 
 2.6.0 (2013-08-23)
