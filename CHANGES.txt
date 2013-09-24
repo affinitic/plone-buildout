@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.6.2 (unreleased)
+2.6.2 (2013-09-24)
 ------------------
 
 - Update url to eggs, it's now http://eggs.irisnet.be.
