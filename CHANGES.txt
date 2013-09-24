@@ -4,7 +4,8 @@ Changelog
 2.6.2 (unreleased)
 ------------------
 
-- Update url to eggs, it's now http://eggs.irisnet.be/
+- Update url to eggs, it's now http://eggs.irisnet.be.
+- Add irisnet.be to allow-hosts. 
 
 
 2.6.1 (2013-09-18)
