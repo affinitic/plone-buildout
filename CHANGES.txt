@@ -6,6 +6,13 @@ Changelog
 
 - Add RobotFramework versions.
 - Update Plone to 4.3.2.
+- Update to collective.quickupload 1.6.0
+- Update to mr.developer 1.26
+- Update to collective.plonefinder 1.0.4
+- Update collective.recipe.backup 2.15
+- Update collective.ckeditor 3.6.12
+- Update collective.js.jqueryui 1.10.3
+- Remove Hotfix, include in Plone 4.3.2
 
 
 2.6.2 (2013-09-24)
