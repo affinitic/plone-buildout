@@ -4,7 +4,7 @@ Changelog
 2.6.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add plonetheme.cfg for testing on Jenkins.
 
 
 2.6.3 (2013-10-22)
