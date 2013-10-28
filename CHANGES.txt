@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - Add plonetheme.cfg for testing on Jenkins.
+- Update to collective.quickupload = 1.6.1
 
 
 2.6.3 (2013-10-22)
