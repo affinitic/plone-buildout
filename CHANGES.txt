@@ -4,8 +4,7 @@ Changelog
 2.6.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Add ua-parser = 0.3.4.
 
 2.6.4 (2013-12-10)
 ------------------
