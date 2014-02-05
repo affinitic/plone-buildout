@@ -22,7 +22,7 @@ venv:
 				else virtualenv -p ${python} . ; fi
 
 zip: venv
-	./bin/$python} bootstrap.py -c both.cfg
+	./bin/${python} bootstrap.py -c both.cfg
 	./bin/buildout -Nt 5 -c both.cfg
 	tar -zcf eggs-${version}-${python}.tar.gz eggs/
 
