@@ -27,7 +27,10 @@ buildout:
 	./bin/buildout -Nt 5 -c both.cfg
 
 zip: venv bootstrap buildout
-	tar -zcf eggs-plonecirb-${version}-${python}.tar.gz eggs/
+	rm -rf eggs-plonecirb
+	mv eggs eggs-plonecirb
+	tar -zcf eggs-plonecirb-${version}-${python}.tar.gz eggs-plonecirb/
+	mv eggs-plonecirb eggs
 
 upload: zip
 	swift -U plone:backup -A https://s.irisnet.be/auth/v1.0/ -K 66031d89fa upload PloneCirb eggs-plonecirb-${version}-${python}.tar.gz
