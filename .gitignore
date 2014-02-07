@@ -8,3 +8,4 @@ local
 develop-eggs
 eggs*
 parts
+lib64
