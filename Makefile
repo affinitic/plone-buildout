@@ -1,4 +1,4 @@
-.PHONY = zip rpm clean buildout
+.PHONY = zip rpm clean buildout install
 
 version=`cat version.txt`
 python=python2.7
@@ -25,6 +25,8 @@ bootstrap:
 
 buildout:
 	./bin/buildout -Nt 5 -c both.cfg
+
+install: venv bootstrap buildout
 
 zip: venv bootstrap buildout
 	rm -rf eggs-plonecirb
