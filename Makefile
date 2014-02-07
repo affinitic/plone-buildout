@@ -32,7 +32,7 @@ zip: venv bootstrap buildout
 upload: zip
 	swift -U plone:backup -A https://s.irisnet.be/auth/v1.0/ -K 66031d89fa upload PloneCirb eggs-plonecirb-${version}-${python}.tar.gz
  
-update: prerelease release upload clean postrelease
+update: prerelease release upload postrelease
 
 rpm:
 	swift -U plone:backup -A https://s.irisnet.be/auth/v1.0/ -K 66031d89fa download PloneCirb eggs-plonecirb-${lasttag}-${python}.tar.gz
