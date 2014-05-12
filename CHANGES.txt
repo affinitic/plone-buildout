@@ -1,10 +1,16 @@
 Changelog
 =========
 
-4.3.2.5 (unreleased)
+4.3.2.6 (unreleased)
 --------------------
 
 - Nothing changed yet.
+
+
+4.3.2.5 (2014-05-12)
+--------------------
+
+- Use setuptools 3.6
 
 
 4.3.2.4 (2014-03-24)
