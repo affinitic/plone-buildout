@@ -4,7 +4,7 @@ Changelog
 4.3.2.6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Use zc.buildout 2.2.1
 
 
 4.3.2.5 (2014-05-12)
