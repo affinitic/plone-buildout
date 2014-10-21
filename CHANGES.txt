@@ -5,7 +5,7 @@ Changelog
 4.2.5.3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Remove broken svn.plone.org host.
 
 
 4.2.5.2 (2014-05-12)
