@@ -1,10 +1,10 @@
 Changelog
 =========
 
-4.3.2.10 (unreleased)
+4.3.2.10 (2015-03-02)
 ---------------------
 
-- Nothing changed yet.
+- Support .brussels in emails; Products.validation 2.0.1
 
 
 4.3.2.9 (2014-11-05)
