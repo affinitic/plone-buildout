@@ -4,7 +4,7 @@ Changelog
 4.3.4.1 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix dependency issue with plone.app.theming
 
 
 4.3.4.0 (2015-05-04)
