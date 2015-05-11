@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3.4.2 (unreleased)
+4.3.4.2 (2015-05-11)
 --------------------
 
 - Update plone.portlet.static to fix issue with 4.3.3
