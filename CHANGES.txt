@@ -4,7 +4,7 @@ Changelog
 4.3.6.2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Enable pypi.irisnet.be after update
 
 
 4.3.6.1 (2015-06-09)
