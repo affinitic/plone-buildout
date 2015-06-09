@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3.6.1 (unreleased)
+4.3.6.1 (2015-06-09)
 --------------------
 
 - Disable pypi.irisnet.be while it updates
