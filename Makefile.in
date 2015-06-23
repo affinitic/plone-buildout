@@ -1,0 +1,7 @@
+BUILDOUT_VERSION ?= master
+
+Makefile: plone-buildout/Makefile
+	cp plone-buildout/Makefile $@
+
+plone-buildout/Makefile:
+	git clone --depth=1 --branch=$(BUILDOUT_VERSION) git@github.com:CIRB/plone-buildout.git
