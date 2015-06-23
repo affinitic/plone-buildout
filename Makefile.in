@@ -1,6 +1,11 @@
 BUILDOUT_VERSION ?= master
 
-Makefile: plone-buildout/Makefile
+.PHONY: clean
+
+clean: 
+	rm -rf plone-buildout
+
+Makefile: clean plone-buildout/Makefile
 	cp plone-buildout/Makefile $@
 
 plone-buildout/Makefile:
