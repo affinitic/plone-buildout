@@ -1,10 +1,12 @@
 VIRTUALENV ?= virtualenv
 BUILDOUT_DIR = plone-buildout
+RPMIZER = rpmizer
 PYTHON = $(BUILDOUT_DIR)/bin/python
 BUILDOUT = $(BUILDOUT_DIR)/bin/buildout
 INSTANCE = $(BUILDOUT_DIR)/bin/instance
+RPMIZER_VERSION = multiple_versions
 
-.PHONY: instance clean buildout
+.PHONY: instance clean buildout rpm
 
 all: instance
 
@@ -16,6 +18,12 @@ buildout: $(INSTANCE)
 
 instance: $(INSTANCE)
 	$(INSTANCE) fg
+
+$(RPMIZER)/build.sh:
+	git clone --depth=1 --branch=$(RPMIZER_VERSION) git@github.com:CIRB/Rpmizer.git $(RPMIZER)
+
+rpm: $(BUILDOUT_DIR)/project.cfg $(RPMIZER)/build.sh
+	$(RPMIZER)/build.sh $(PROJECT_ID)
 
 $(INSTANCE): $(BUILDOUT) $(BUILDOUT_DIR)/project.cfg
 	$(BUILDOUT) -Nvt 5 -c $(BUILDOUT_DIR)/dev-project.cfg
