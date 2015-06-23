@@ -4,6 +4,7 @@ Changelog
 4.3.6.4 (unreleased)
 --------------------
 
+- Get rid of PloneHotfix20131210
 - Use Plone 4.3.6.1-cirb
 
 
