@@ -6,7 +6,7 @@ BUILDOUT = $(BUILDOUT_DIR)/bin/buildout
 INSTANCE = $(BUILDOUT_DIR)/bin/instance
 RPMIZER_VERSION = multiple_versions
 
-.PHONY: instance clean buildout rpm
+.PHONY: instance clean buildout rpm cleanrpmizer
 
 all: instance
 
@@ -14,12 +14,15 @@ clean:
 	cp $(BUILDOUT_DIR)/Makefile.in Makefile
 	rm -rf $(BUILDOUT_DIR)
 
+cleanrpmizer:
+	rm -rf $(RPMIZER)
+
 buildout: $(INSTANCE)
 
 instance: $(INSTANCE)
 	$(INSTANCE) fg
 
-$(RPMIZER)/build.sh:
+$(RPMIZER)/build.sh: cleanrpmizer
 	git clone --depth=1 --branch=$(RPMIZER_VERSION) git@github.com:CIRB/Rpmizer.git $(RPMIZER)
 
 rpm: $(BUILDOUT_DIR)/project.cfg $(RPMIZER)/build.sh
