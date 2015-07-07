@@ -6,7 +6,7 @@ BUILDOUT = $(BUILDOUT_DIR)/bin/buildout
 INSTANCE = $(BUILDOUT_DIR)/bin/instance
 RPMIZER_VERSION = multiple_versions
 SETUPTOOLS_VERSION = 18.0.1
-BUILDOUT_VERSION = 2.4.0
+ZCBUILDOUT_VERSION = 2.4.0
 
 .PHONY: instance clean buildout rpm cleanrpmizer
 
@@ -36,7 +36,7 @@ $(INSTANCE): $(BUILDOUT) $(BUILDOUT_DIR)/project.cfg
 
 $(BUILDOUT): $(PYTHON)
 	$(PYTHON) $(BUILDOUT_DIR)/bootstrap-buildout.py --setuptools-version=$(SETUPTOOLS_VERSION) \
-		--buildout-version=$(BUILDOUT_VERSION) -c $(BUILDOUT_DIR)/base.cfg
+		--buildout-version=$(ZCBUILDOUT_VERSION) -c $(BUILDOUT_DIR)/base.cfg
 
 $(PYTHON):
 	$(VIRTUALENV) --no-site-packages $(BUILDOUT_DIR)
