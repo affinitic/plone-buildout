@@ -36,7 +36,7 @@ $(INSTANCE): $(BUILDOUT) $(BUILDOUT_DIR)/project.cfg
 
 $(BUILDOUT): $(PYTHON)
 	$(PYTHON) $(BUILDOUT_DIR)/bootstrap-buildout.py --setuptools-version=$(SETUPTOOLS_VERSION) \ 
-	--buildout-version=$(BUILDOUT_VERSION) -c $(BUILDOUT_DIR)/base.cfg
+--buildout-version=$(BUILDOUT_VERSION) -c $(BUILDOUT_DIR)/base.cfg
 
 $(PYTHON):
 	$(VIRTUALENV) --no-site-packages $(BUILDOUT_DIR)
