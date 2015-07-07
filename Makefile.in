@@ -1,4 +1,4 @@
-BUILDOUT_VERSION ?= master
+BUILDOUT_VERSION ?= undefined
 
 .PHONY: clean
 
