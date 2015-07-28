@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3.6.7 (unreleased)
+4.3.6.7 (2015-07-28)
 --------------------
 
 - Fix again rsync parts for dev. 
