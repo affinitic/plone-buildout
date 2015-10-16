@@ -4,7 +4,7 @@ Changelog
 4.3.7.1 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Pin cssselect.
 
 
 4.3.7.0 (2015-10-16)
