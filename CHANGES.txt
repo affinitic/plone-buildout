@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3.6.8 (unreleased)
+4.3.7.0 (2015-10-16)
 --------------------
 
 - Upgrade to 4.3.7 plus plone4.csrffixes 1.0.6
