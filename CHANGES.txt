@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3.4.4 (unreleased)
+4.3.4.4 (2015-12-08)
 --------------------
 
 - Fix pypi find-links
