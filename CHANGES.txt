@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3.4.5 (unreleased)
+4.3.4.5 (2015-12-08)
 --------------------
 
 - Use pypi.python.org
