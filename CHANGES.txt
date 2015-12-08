@@ -4,7 +4,7 @@ Changelog
 4.3.4.3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- PloneHotfix20151208
 
 
 4.3.4.2 (2015-05-11)
