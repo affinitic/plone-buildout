@@ -4,7 +4,8 @@ Changelog
 4.3.6.9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- index=pypi.irisnet.be
+- find-links+=pypi.python.org
 
 
 4.3.6.8 (2015-12-08)
