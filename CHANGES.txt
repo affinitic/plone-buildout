@@ -4,7 +4,7 @@ Changelog
 4.3.4.5 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Use pypi.python.org
 
 
 4.3.4.4 (2015-12-08)
