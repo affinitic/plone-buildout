@@ -4,6 +4,7 @@ Changelog
 4.3.6.8 (2015-12-08)
 --------------------
 
+- Products.PloneHotfix20160830
 - Products.PloneHotfix2015120
 - index=pypi.python.org
 
