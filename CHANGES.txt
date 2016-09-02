@@ -4,7 +4,7 @@ Changelog
 4.3.8.0 (unreleased)
 --------------------
 
-- Upgrade to 4.3.8 
+- Upgrade to 4.3.11
 
 
 4.3.7.1 (2015-10-16)
