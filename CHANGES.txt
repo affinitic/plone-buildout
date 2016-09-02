@@ -5,6 +5,9 @@ Changelog
 4.3.10.1 (unreleased)
 ---------------------
 
+- Pin plone.protect for plone4.csrffixes
+  [gotcha]
+
 - Include PloneHotfix20160830
   [gotcha]
 
