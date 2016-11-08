@@ -5,7 +5,8 @@ Changelog
 4.3.10.2 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Update collective.quickupload to work with plone.protect
+  [gotcha]
 
 
 4.3.10.1 (2016-09-02)
