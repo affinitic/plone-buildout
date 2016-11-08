@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-4.3.10.2 (unreleased)
+4.3.10.2 (2016-11-08)
 ---------------------
 
 - Update collective.quickupload to work with plone.protect
