@@ -5,7 +5,11 @@ Changelog
 4.3.10.3 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Include PloneHotfix20161129
+  [gotcha]
+
+- Upgrade to 4.3.11
+  [gotcha]
 
 
 4.3.10.2 (2016-11-08)
