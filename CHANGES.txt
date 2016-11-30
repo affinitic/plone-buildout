@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-4.3.10.3 (unreleased)
+4.3.11.1 (2016-11-30)
 ---------------------
 
 - Include PloneHotfix20161129
