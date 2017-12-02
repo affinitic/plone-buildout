@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-4.3.11.3 (unreleased)
+4.3.11.3 (2017-12-02)
 ---------------------
 
 - Add the latest hoftixes
