@@ -5,7 +5,8 @@ Changelog
 4.3.11.3 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Add the latest hoftixes
+  [mpeeters]
 
 
 4.3.11.2 (2016-11-30)
