@@ -2,6 +2,19 @@ Changelog
 =========
 
 
+5.1 (unreleased)
+----------------
+
+- Upgrade to Plone 5.1
+  [laz]
+
+- Use zc.buildout 2.5.3
+  [laz]
+
+- Use setuptools 26.1.1
+  [laz]
+
+
 5.0.8.1 (unreleased)
 ---------------------
 

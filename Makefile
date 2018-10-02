@@ -5,8 +5,8 @@ PYTHON = $(BUILDOUT_DIR)/bin/python
 BUILDOUT = $(BUILDOUT_DIR)/bin/buildout
 INSTANCE = $(BUILDOUT_DIR)/bin/instance
 RPMIZER_VERSION = multiple_versions
-SETUPTOOLS_VERSION = 18.0.1
-ZCBUILDOUT_VERSION = 2.4.0
+SETUPTOOLS_VERSION = 26.1.1
+ZCBUILDOUT_VERSION = 2.5.3
 
 .PHONY: instance clean buildout rpm cleanrpmizer
 
